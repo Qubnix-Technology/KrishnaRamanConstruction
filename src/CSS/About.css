@@ -1,0 +1,757 @@
+/* ==========================================================================
+   KRISHA RAMAN CONSTRUCTION & CONTRACTORS - ABOUT US PAGE STYLING
+   ========================================================================== */
+
+:root {
+  --navy: #071522;
+  --navy-dark: #050F18;
+  --navy-card: #0D2233;
+  --gold: #E9A91A;
+  --gold-light: #F2B82B;
+  --white: #FFFFFF;
+  --black: #111111;
+  --gray: #6B7280;
+  --light-bg: #F8FAFC;
+  --border: #E5E5E5;
+  --font-heading: 'Barlow Condensed', 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+.about-page-root {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--white);
+  font-family: var(--font-body);
+}
+
+.about-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-gold-line.left-aligned {
+  margin: 10px 0 24px 0;
+}
+
+/* ==========================================================================
+   1. ABOUT US HERO / PAGE BANNER (Desktop: 300–330px)
+   ========================================================================== */
+.about-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  min-height: 320px;
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 15, 24, 0.94) 0%,
+    rgba(5, 15, 24, 0.75) 45%,
+    rgba(5, 15, 24, 0.25) 100%
+  );
+  z-index: 1;
+}
+
+.about-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.about-hero-content {
+  max-width: 540px;
+}
+
+.about-gold-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.about-hero-heading {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.0;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.about-hero-subtext {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #E5E7EB;
+  margin: 0 0 22px;
+  max-width: 480px;
+}
+
+.btn-about-quote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  background-color: var(--gold);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(233, 169, 26, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-about-quote:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-about-quote:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   2. WHO WE ARE (Company Intro + Image)
+   ========================================================================== */
+.who-we-are-section {
+  background-color: var(--white);
+  padding: 75px 0 80px;
+  width: 100%;
+}
+
+.who-we-are-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.who-image-col {
+  width: 100%;
+}
+
+.who-image-frame {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.who-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.who-image-gold-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gold);
+}
+
+.who-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.who-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.who-paragraphs p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4B5563;
+  margin: 0;
+}
+
+.who-paragraphs strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.who-highlights-bar {
+  display: flex;
+  align-items: center;
+  background: var(--light-bg);
+  border-left: 3px solid var(--gold);
+  padding: 14px 18px;
+  gap: 16px;
+  border-radius: 0;
+}
+
+.highlight-item {
+  flex: 1;
+  text-align: center;
+}
+
+.hl-title {
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hl-divider {
+  width: 1px;
+  height: 20px;
+  background-color: #CBD5E1;
+}
+
+/* ==========================================================================
+   3. OUR PURPOSE (Mission & Vision Cards)
+   ========================================================================== */
+.mission-vision-section {
+  background-color: var(--navy);
+  padding: 70px 0 75px;
+  width: 100%;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 10px;
+}
+
+.purpose-card {
+  background-color: var(--navy-card);
+  border: 1px solid rgba(233, 169, 26, 0.35);
+  padding: 38px 30px 32px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.purpose-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.purpose-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  background: rgba(233, 169, 26, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  margin-bottom: 18px;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.purpose-card:hover .purpose-icon-circle {
+  background: var(--gold);
+  color: var(--navy);
+  transform: scale(1.05);
+}
+
+.purpose-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.purpose-card-desc {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #D1D5DB;
+  margin: 0;
+}
+
+.purpose-card-gold-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--gold);
+}
+
+/* ==========================================================================
+   4. WHY KRISHA RAMAN (5 Core Value Features)
+   ========================================================================== */
+.about-why-us-section {
+  background-color: var(--white);
+  padding: 70px 0 75px;
+  width: 100%;
+}
+
+.about-why-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 15px;
+}
+
+.about-why-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 18px;
+}
+
+.about-why-icon-box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
+}
+
+.about-why-icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.about-why-card:hover .about-why-icon-box {
+  transform: translateY(-4px);
+}
+
+.about-why-title {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--black);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-why-desc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--gray);
+  margin: 0;
+}
+
+.about-why-separator {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 1px;
+  height: 125px;
+  background-color: #E2E8F0;
+}
+
+/* ==========================================================================
+   5. OUR VALUES (6 Cards in 3x2 Grid)
+   ========================================================================== */
+.our-values-section {
+  background-color: var(--light-bg);
+  padding: 70px 0 80px;
+  width: 100%;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 15px;
+}
+
+.value-card {
+  background-color: var(--white);
+  border: 1px solid #EDEDED;
+  border-radius: 2px;
+  padding: 30px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(7, 21, 34, 0.1);
+  border-color: #E0E0E0;
+}
+
+.value-icon-holder {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.value-icon-svg {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.value-card:hover .value-icon-holder {
+  color: var(--gold);
+  transform: scale(1.06);
+}
+
+.value-card-title {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--black);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.value-card-desc {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--gray);
+  margin: 0;
+}
+
+.value-card-gold-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--gold);
+}
+
+/* ==========================================================================
+   6. OUR APPROACH (4-Step Timeline in Dark Navy + Right Image)
+   ========================================================================== */
+.our-approach-section {
+  background-color: var(--navy);
+  padding: 75px 0 80px;
+  width: 100%;
+}
+
+.approach-layout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.approach-content-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.approach-intro-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #D1D5DB;
+  margin: 0 0 28px;
+  max-width: 520px;
+}
+
+.approach-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  position: relative;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-number {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--gold);
+  width: 38px;
+  height: 38px;
+  border-radius: 2px;
+  border: 1.5px solid var(--gold);
+  background: rgba(233, 169, 26, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.timeline-line {
+  width: 1.5px;
+  height: calc(100% + 18px);
+  background-color: rgba(233, 169, 26, 0.3);
+  position: absolute;
+  top: 38px;
+}
+
+.timeline-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-title {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  line-height: 1.2;
+}
+
+.timeline-desc {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.approach-image-col {
+  width: 100%;
+}
+
+.approach-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.approach-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.approach-gold-accent-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gold);
+}
+
+/* ==========================================================================
+   7. RESPONSIVE MEDIA QUERIES (About Page)
+   ========================================================================== */
+
+/* Laptop (992px – 1199px) */
+@media (max-width: 1199px) {
+  .about-why-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+  }
+
+  .about-why-separator {
+    display: none;
+  }
+
+  .approach-layout-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* Tablet (768px – 991px) */
+@media (max-width: 991px) {
+  .about-hero-banner {
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .about-hero-heading {
+    font-size: 38px;
+  }
+
+  .who-we-are-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .who-image-frame {
+    height: 300px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 12px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .approach-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .approach-image-wrapper {
+    height: 300px;
+  }
+}
+
+/* Mobile (480px – 767px) */
+@media (max-width: 767px) {
+  .about-hero-banner {
+    height: 380px;
+    min-height: 380px;
+  }
+
+  .about-hero-heading {
+    font-size: 32px;
+  }
+
+  .about-hero-subtext {
+    font-size: 13.5px;
+  }
+
+  .who-highlights-bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .hl-divider {
+    display: none;
+  }
+
+  .about-why-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .value-card {
+    padding: 22px 12px 18px;
+  }
+
+  .value-card-title {
+    font-size: 14px;
+  }
+
+  .value-card-desc {
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile (< 480px) */
+@media (max-width: 480px) {
+  .about-hero-banner {
+    height: 400px;
+    min-height: 400px;
+  }
+
+  .about-hero-heading {
+    font-size: 28px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .timeline-item {
+    gap: 12px;
+  }
+
+  .timeline-number {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .timeline-line {
+    top: 32px;
+  }
+}

@@ -1,0 +1,839 @@
+/* ==========================================================================
+   KRISHA RAMAN CONSTRUCTION & CONTRACTORS - WHY US PAGE STYLING
+   ========================================================================== */
+
+:root {
+  --navy: #071522;
+  --navy-dark: #050F18;
+  --navy-card: #0D2233;
+  --gold: #E9A91A;
+  --gold-light: #F2B82B;
+  --white: #FFFFFF;
+  --black: #111827;
+  --gray: #6B7280;
+  --light-bg: #F8FAFC;
+  --border: #E5E7EB;
+  --font-heading: 'Barlow Condensed', 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+.whyus-page-root {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--white);
+  font-family: var(--font-body);
+}
+
+.whyus-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   1. WHY US HERO / PAGE BANNER (Desktop: 320–350px)
+   ========================================================================== */
+.whyus-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  min-height: 330px;
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.whyus-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.whyus-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 15, 24, 0.94) 0%,
+    rgba(5, 15, 24, 0.72) 45%,
+    rgba(5, 15, 24, 0.20) 100%
+  );
+  z-index: 1;
+}
+
+.whyus-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.whyus-hero-content {
+  max-width: 540px;
+}
+
+.whyus-gold-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.whyus-hero-heading {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.0;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.whyus-hero-subtext {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #E5E7EB;
+  margin: 0 0 22px;
+  max-width: 480px;
+}
+
+.btn-whyus-quote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  background-color: var(--gold);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(233, 169, 26, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-whyus-quote:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-whyus-quote:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   2. WHY KRISHA RAMAN (Image Left + Text Right)
+   ========================================================================== */
+.why-krisha-section {
+  background-color: var(--white);
+  padding: 80px 0 85px;
+  width: 100%;
+}
+
+.why-krisha-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.why-krisha-image-col {
+  width: 100%;
+}
+
+.why-krisha-frame {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.why-krisha-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.why-krisha-gold-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gold);
+}
+
+.why-krisha-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-krisha-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.why-krisha-paragraphs p {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.68;
+  color: #4B5563;
+  margin: 0;
+}
+
+.why-krisha-paragraphs strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   3. FIVE CORE STRENGTHS (Dark Navy #071522 Strip)
+   ========================================================================== */
+.whyus-strengths-section {
+  background-color: var(--navy);
+  padding: 70px 0 75px;
+  width: 100%;
+}
+
+.whyus-strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 15px;
+}
+
+.whyus-strength-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 16px;
+}
+
+.whyus-strength-icon-box {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
+}
+
+.whyus-strength-icon {
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.whyus-strength-card:hover .whyus-strength-icon-box {
+  transform: translateY(-4px);
+}
+
+.whyus-strength-title {
+  font-family: var(--font-heading);
+  font-size: 14.5px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.whyus-strength-desc {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #D1D5DB;
+  margin: 0;
+}
+
+.whyus-strength-separator {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 1px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================================================
+   4. QUALITY & CRAFTSMANSHIP & SAFETY (Alternating Layouts)
+   ========================================================================== */
+.quality-craft-section,
+.safety-first-section {
+  padding: 85px 0;
+  width: 100%;
+}
+
+.quality-craft-section {
+  background-color: var(--white);
+  border-top: 1px solid #F1F5F9;
+}
+
+.safety-first-section {
+  background-color: var(--light-bg);
+  border-top: 1px solid #E2E8F0;
+}
+
+.quality-split-grid,
+.safety-split-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.safety-split-grid {
+  grid-template-columns: 1fr 1.05fr;
+}
+
+.quality-image-frame,
+.safety-image-frame {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.quality-photo,
+.safety-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.quality-gold-border,
+.safety-gold-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gold);
+}
+
+.quality-intro-text,
+.safety-intro-text {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.68;
+  color: #4B5563;
+  margin: 0 0 24px;
+}
+
+.whyus-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.whyus-check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.check-bullet {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(233, 169, 26, 0.12);
+  border: 1.5px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.check-svg {
+  stroke-width: 3;
+}
+
+.check-label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+/* ==========================================================================
+   6. OUR COMMITMENT (Dark Navy #071522 4 Columns)
+   ========================================================================== */
+.whyus-commitment-section {
+  background-color: var(--navy);
+  padding: 75px 0 85px;
+  width: 100%;
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 35px;
+  background: var(--navy-card);
+  border: 1px solid rgba(233, 169, 26, 0.25);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.commitment-card {
+  position: relative;
+  padding: 34px 22px 30px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.25s ease;
+}
+
+.commitment-card:hover {
+  background-color: rgba(13, 34, 51, 0.95);
+}
+
+.commitment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.commit-num {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.commit-icon-holder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  background: rgba(233, 169, 26, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  transition: all 0.25s ease;
+}
+
+.commitment-card:hover .commit-icon-holder {
+  background: var(--gold);
+  color: var(--navy);
+  transform: scale(1.06);
+}
+
+.commit-title {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.commit-desc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.commitment-separator {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 20px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.commitment-gold-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--gold);
+}
+
+/* ==========================================================================
+   7. WORKING PRINCIPLES (5 Steps Horizontal / Vertical Mobile)
+   ========================================================================== */
+.working-principles-section {
+  background-color: var(--white);
+  padding: 75px 0 85px;
+  width: 100%;
+}
+
+.principles-track {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.principle-node {
+  background: var(--white);
+  border: 1px solid #EDEDED;
+  padding: 26px 16px 22px;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.principle-node:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(7, 21, 34, 0.1);
+  border-color: #E0E0E0;
+}
+
+.principle-step-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  border: 1.5px solid var(--gold);
+}
+
+.principle-title {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.principle-desc {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--gray);
+  margin: 0;
+}
+
+.principle-connector {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gold);
+  z-index: 5;
+  display: none;
+}
+
+/* ==========================================================================
+   8. WHY CLIENTS CHOOSE US (3 Highlight Cards in Dark Navy)
+   ========================================================================== */
+.clients-choose-section {
+  background-color: var(--navy);
+  padding: 75px 0 85px;
+  width: 100%;
+}
+
+.clients-choose-intro {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #D1D5DB;
+  max-width: 660px;
+  margin: 14px auto 0;
+  text-align: center;
+}
+
+.choose-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.choose-highlight-card {
+  background-color: var(--navy-card);
+  border: 1px solid rgba(233, 169, 26, 0.35);
+  border-radius: 2px;
+  padding: 34px 24px 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.choose-highlight-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.choose-icon-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  background: rgba(233, 169, 26, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  margin-bottom: 18px;
+  transition: all 0.25s ease;
+}
+
+.choose-highlight-card:hover .choose-icon-circle {
+  background: var(--gold);
+  color: var(--navy);
+  transform: scale(1.08);
+}
+
+.choose-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.choose-card-desc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.choose-card-gold-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--gold);
+}
+
+/* ==========================================================================
+   9. OUR PROMISE (Centered Closing Statement)
+   ========================================================================== */
+.our-promise-section {
+  background-color: var(--white);
+  padding: 70px 0 75px;
+  width: 100%;
+  text-align: center;
+}
+
+.promise-box {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.promise-paragraph {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.68;
+  color: #4B5563;
+  margin: 16px auto 0;
+}
+
+/* ==========================================================================
+   10. RESPONSIVE MEDIA QUERIES (Why Us Page)
+   ========================================================================== */
+
+/* Laptop (992px – 1199px) */
+@media (max-width: 1199px) {
+  .whyus-strengths-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+  }
+
+  .whyus-strength-separator {
+    display: none;
+  }
+
+  .why-krisha-grid,
+  .quality-split-grid,
+  .safety-split-grid {
+    gap: 36px;
+  }
+
+  .commitment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .commitment-separator {
+    display: none;
+  }
+
+  .principles-track {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet (768px – 991px) */
+@media (max-width: 991px) {
+  .whyus-hero-banner {
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .whyus-hero-heading {
+    font-size: 38px;
+  }
+
+  .why-krisha-grid,
+  .quality-split-grid,
+  .safety-split-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .quality-split-grid .quality-image-col {
+    order: 1;
+  }
+
+  .quality-split-grid .quality-content-col {
+    order: 2;
+  }
+
+  .why-krisha-frame,
+  .quality-image-frame,
+  .safety-image-frame {
+    height: 300px;
+  }
+
+  .whyus-strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 12px;
+  }
+
+  .commitment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principles-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .choose-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* Mobile (480px – 767px) */
+@media (max-width: 767px) {
+  .whyus-hero-banner {
+    height: 390px;
+    min-height: 390px;
+  }
+
+  .whyus-hero-heading {
+    font-size: 34px;
+  }
+
+  .whyus-hero-subtext {
+    font-size: 13.5px;
+  }
+
+  .why-krisha-frame,
+  .quality-image-frame,
+  .safety-image-frame {
+    height: 240px;
+  }
+
+  .whyus-strengths-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-track {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .choose-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Small Mobile (< 480px) */
+@media (max-width: 480px) {
+  .whyus-hero-banner {
+    height: 410px;
+    min-height: 410px;
+  }
+
+  .whyus-hero-heading {
+    font-size: 30px;
+  }
+
+  .why-krisha-frame,
+  .quality-image-frame,
+  .safety-image-frame {
+    height: 210px;
+  }
+
+  .promise-paragraph {
+    font-size: 14px;
+  }
+}
