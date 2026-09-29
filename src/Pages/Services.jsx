@@ -45,8 +45,8 @@ export default function Services({ onNavigate }) {
     {
       id: 'commercial',
       number: '02',
-      title: 'COMMERCIAL\nCONSTRUCTION',
-      desc: 'Modern and functional spaces for growing businesses.',
+      title: 'COMMERCIAL\nRENOVATION',
+      desc: 'Modern and functional renovation for growing businesses.',
       icon: (
         <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="service-card-icon-svg">
           <rect x="10" y="20" width="18" height="32" />
@@ -70,28 +70,8 @@ export default function Services({ onNavigate }) {
       )
     },
     {
-      id: 'industrial',
-      number: '03',
-      title: 'INDUSTRIAL\nCONSTRUCTION',
-      desc: 'Strong and efficient structures for industrial needs.',
-      icon: (
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="service-card-icon-svg">
-          <line x1="16" y1="52" x2="16" y2="14" strokeWidth="2.8" />
-          <line x1="8" y1="14" x2="54" y2="14" strokeWidth="2.8" />
-          <polyline points="8,14 16,6 24,14" />
-          <line x1="16" y1="6" x2="44" y2="14" />
-          <line x1="48" y1="14" x2="48" y2="26" />
-          <rect x="42" y="26" width="12" height="8" fill="none" />
-          <line x1="10" y1="52" x2="22" y2="52" strokeWidth="2.8" />
-          <line x1="16" y1="22" x2="24" y2="28" />
-          <line x1="16" y1="34" x2="24" y2="40" />
-          <path d="M28 34v18h26V38l-8-4v4l-8-4v4h-10z" />
-        </svg>
-      )
-    },
-    {
       id: 'renovation',
-      number: '04',
+      number: '03',
       title: 'RENOVATION &\nREMODELING',
       desc: 'Transforming existing spaces with innovation and expertise.',
       icon: (
@@ -107,7 +87,7 @@ export default function Services({ onNavigate }) {
     },
     {
       id: 'architectural',
-      number: '05',
+      number: '04',
       title: 'ARCHITECTURAL\nDESIGN',
       desc: 'Creative designs that combine aesthetics and functionality.',
       icon: (
@@ -125,7 +105,7 @@ export default function Services({ onNavigate }) {
     },
     {
       id: 'project-mgmt',
-      number: '06',
+      number: '05',
       title: 'PROJECT\nMANAGEMENT',
       desc: 'End-to-end execution with timely delivery and quality control.',
       icon: (
@@ -137,6 +117,26 @@ export default function Services({ onNavigate }) {
           <path d="M14 54c0-7 6-11 18-11s18 4 18 11" />
           <path d="M30 43l2 5 2-5" />
           <line x1="8" y1="54" x2="56" y2="54" strokeWidth="2.8" />
+        </svg>
+      )
+    },
+    {
+      id: 'interior-designing',
+      number: '06',
+      title: 'INTERIOR\nDESIGNING',
+      desc: 'Elegant and functional interiors crafted to reflect your style.',
+      icon: (
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="service-card-icon-svg">
+          <rect x="8" y="36" width="48" height="12" rx="2" />
+          <path d="M14 36v-6a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v6" />
+          <rect x="6" y="48" width="52" height="4" rx="1" />
+          <line x1="14" y1="48" x2="14" y2="54" />
+          <line x1="50" y1="48" x2="50" y2="54" />
+          <circle cx="48" cy="18" r="6" />
+          <line x1="48" y1="12" x2="48" y2="8" />
+          <line x1="48" y1="24" x2="48" y2="28" />
+          <line x1="42" y1="18" x2="38" y2="18" />
+          <line x1="54" y1="18" x2="58" y2="18" />
         </svg>
       )
     }
@@ -162,38 +162,22 @@ export default function Services({ onNavigate }) {
     {
       id: 'commercial',
       number: '02',
-      label: 'COMMERCIAL CONSTRUCTION',
-      heading: 'SPACES DESIGNED FOR BUSINESS.',
-      desc: 'We deliver modern commercial spaces designed around functionality, efficiency and business growth. Our approach focuses on quality execution, practical architectural planning, and professional project coordination that delivers on time and within budget.',
+      label: 'COMMERCIAL RENOVATION',
+      heading: 'MODERN SPACES. ENGINEERED FOR BUSINESS.',
+      desc: 'We deliver comprehensive commercial renovation and remodeling solutions designed around functionality, modern aesthetic appeal, and business efficiency. From corporate offices to retail spaces, we execute renovations with precision and on-time delivery.',
       features: [
-        'Functional architectural planning',
-        'Quality execution with Grade-A materials',
-        'Efficient project coordination & safety',
-        'Professional finishing & handover'
+        'Turnkey office fit-outs & commercial remodeling',
+        'Functional architectural planning & layout upgrades',
+        'High-grade materials, lighting & finish installations',
+        'Professional project coordination & minimum downtime'
       ],
       image: commImg,
-      alt: 'Modern corporate headquarters and commercial building',
+      alt: 'Modern corporate headquarters and commercial renovation',
       imageLeft: false
     },
     {
-      id: 'industrial',
-      number: '03',
-      label: 'INDUSTRIAL CONSTRUCTION',
-      heading: 'STRONG STRUCTURES. BUILT TO PERFORM.',
-      desc: 'Our industrial construction solutions are designed for demanding environments where structural strength, spatial efficiency, and heavy-duty reliability are essential. We construct warehouses, manufacturing plants, and logistics hubs.',
-      features: [
-        'Structural strength & heavy-duty engineering',
-        'Industrial-grade materials & steel framing',
-        'Safety-focused execution & compliance',
-        'Efficient planning for logistic workflows'
-      ],
-      image: indImg,
-      alt: 'Industrial manufacturing plant and warehouse structure',
-      imageLeft: true
-    },
-    {
       id: 'renovation',
-      number: '04',
+      number: '03',
       label: 'RENOVATION & REMODELING',
       heading: 'TRANSFORMING EXISTING SPACES.',
       desc: 'We transform existing residential and commercial properties into modern, functional, and visually appealing environments while maintaining strict attention to structural integrity, safety regulations, and bespoke finishing quality.',
@@ -205,11 +189,11 @@ export default function Services({ onNavigate }) {
       ],
       image: renoImg,
       alt: 'Luxury modern home interior renovation',
-      imageLeft: false
+      imageLeft: true
     },
     {
       id: 'architectural',
-      number: '05',
+      number: '04',
       label: 'ARCHITECTURAL DESIGN',
       heading: 'DESIGNING SPACES WITH PURPOSE.',
       desc: 'Our architectural design approach combines aesthetics, functionality, and practical construction considerations to create spaces that are both inspiring and purposeful. We deliver conceptual plans, 3D visualizations, and construction-ready drawings.',
@@ -221,11 +205,11 @@ export default function Services({ onNavigate }) {
       ],
       image: archImg,
       alt: 'Architect workspace with blueprint drafting and scale model',
-      imageLeft: true
+      imageLeft: false
     },
     {
       id: 'project-mgmt',
-      number: '06',
+      number: '05',
       label: 'PROJECT MANAGEMENT',
       heading: 'FROM PLANNING TO COMPLETION.',
       desc: 'We coordinate every single stage of construction to keep projects highly organized, efficient, and strictly aligned with agreed timelines, cost estimates, and quality standards, eliminating delays and uncertainty.',
@@ -237,6 +221,22 @@ export default function Services({ onNavigate }) {
       ],
       image: mgmtImg,
       alt: 'Civil engineer and project manager supervising site progress',
+      imageLeft: true
+    },
+    {
+      id: 'interior-designing',
+      number: '06',
+      label: 'INTERIOR DESIGNING',
+      heading: 'SPACES THAT INSPIRE, INTERIORS THAT LAST.',
+      desc: 'We craft stunning, functional interior spaces tailored to your personality and lifestyle. From concept to completion, our interior design team combines creativity with precision to transform every room into a masterpiece.',
+      features: [
+        'Personalised design concepts & mood boards',
+        'Premium furniture, fixtures & finish selections',
+        'Space planning, lighting & colour coordination',
+        'End-to-end execution with quality handover'
+      ],
+      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
+      alt: 'Elegant modern interior design living room',
       imageLeft: false
     }
   ];
@@ -373,7 +373,7 @@ export default function Services({ onNavigate }) {
             <h2 className="section-dark-title">COMPLETE CONSTRUCTION SOLUTIONS</h2>
             <div className="section-gold-line"></div>
             <p className="services-intro-paragraph">
-              From new construction to renovation and project management, we provide reliable solutions designed to meet the unique requirements of residential, commercial and industrial projects.
+              From new construction to renovation and project management, we provide reliable solutions designed to meet the unique requirements of residential and commercial projects.
             </p>
           </div>
 

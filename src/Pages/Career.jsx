@@ -681,7 +681,7 @@ export default function Career({ onNavigate }) {
                       id="applicant-phone"
                       required 
                       className="form-input" 
-                      placeholder="e.g. +91 98765 43210"
+                      placeholder="e.g. +91 99112 73705"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />

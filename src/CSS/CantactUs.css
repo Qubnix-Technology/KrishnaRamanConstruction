@@ -312,6 +312,11 @@
   font-weight: 700;
 }
 
+.hours-row .open {
+  color: #16A34A;
+  font-weight: 600;
+}
+
 .contact-social-block {
   margin-top: 22px;
   display: flex;

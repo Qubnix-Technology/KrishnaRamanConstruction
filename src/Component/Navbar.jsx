@@ -8,6 +8,7 @@ import {
   Wrench, 
   Compass, 
   HardHat, 
+  Palette,
   ChevronDown, 
   ArrowRight, 
   Menu, 
@@ -25,17 +26,10 @@ const servicesList = [
   },
   {
     id: 'commercial',
-    title: 'Commercial Construction',
-    desc: 'Modern and functional spaces for growing businesses.',
+    title: 'Commercial Renovation',
+    desc: 'Modern and functional renovation for growing businesses.',
     icon: Building2,
     path: '#commercial'
-  },
-  {
-    id: 'industrial',
-    title: 'Industrial Construction',
-    desc: 'Strong and efficient structures for industrial needs.',
-    icon: Factory,
-    path: '#industrial'
   },
   {
     id: 'renovation',
@@ -57,6 +51,13 @@ const servicesList = [
     desc: 'End-to-end execution with timely delivery and quality control.',
     icon: HardHat,
     path: '#project-mgmt'
+  },
+  {
+    id: 'interior-designing',
+    title: 'Interior Designing',
+    desc: 'Elegant and functional interiors crafted to reflect your style.',
+    icon: Palette,
+    path: '#interior-designing'
   }
 ];
 
@@ -346,7 +347,7 @@ export default function Navbar({ currentPage = 'HOME', onNavigate }) {
 
             <div className="drawer-contact-snippet">
               <PhoneCall size={14} className="contact-icon" />
-              <span>+91 98765 43210</span>
+              <span>+91 99908 95089, +91 99112 73705</span>
             </div>
 
             <div className="drawer-footer-divider"></div>

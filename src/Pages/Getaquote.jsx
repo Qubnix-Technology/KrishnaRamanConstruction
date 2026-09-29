@@ -35,11 +35,11 @@ export default function Getaquote({ onNavigate }) {
 
   const servicesList = [
     'Residential Construction',
-    'Commercial Construction',
-    'Industrial Construction',
+    'Commercial Renovation',
     'Renovation & Remodeling',
     'Architectural Design',
     'Project Management',
+    'Interior Designing',
     'Other'
   ];
 
@@ -258,7 +258,7 @@ export default function Getaquote({ onNavigate }) {
                         name="phone"
                         required 
                         className="compact-text-input"
-                        placeholder="+91 Enter phone number"
+                        placeholder="+91 99112 73705"
                         value={formData.phone}
                         onChange={handleChange}
                       />
